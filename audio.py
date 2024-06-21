@@ -102,6 +102,7 @@ def _build_mel_basis():
 
 '''
 def _build_mel_basis():
+    print("Using updated _build_mel_basis function")
     assert hp.fmax <= hp.sample_rate // 2
     return librosa.filters.mel(
         sr=hp.sample_rate, 
